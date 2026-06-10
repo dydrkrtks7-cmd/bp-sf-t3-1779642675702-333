@@ -1,213 +1,535 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>주식투자 리서치 및 기술 인프라 저널</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #FCFBF7;
-      --charcoal-fg: #1E1B18;
-      --gold-accent: #b8976f;
-      --hairline-color: #e5e2db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <meta name="description" content="SEO 오토파일럿 가격을 포함한 마포 지역 주식투자 전문 솔루션. 체계적인 데이터 기반 투자 전략과 자동화된 SEO 최적화로 안정적인 수익 구조를 설계합니다. 지금 바로 상담하세요.">
+    <meta name="keywords" content="SEO 오토파일럿 가격, 마포 주식투자, 주식 자동매매, SEO 최적화, 투자 솔루션, 데이터 기반 투자">
+    <meta name="author" content="마포 주식투자 연구소">
+    <link rel="canonical" href="https://sf-t3-1779642675702-333.vercel.app/">
+    <meta property="og:title" content="SEO 오토파일럿 가격 | 마포 주식투자 전문 솔루션">
+    <meta property="og:description" content="데이터 기반 주식투자와 SEO 자동화를 결합한 혁신적인 솔루션. SEO 오토파일럿 가격부터 투자 전략까지 한 번에 확인하세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sf-t3-1779642675702-333.vercel.app/">
+    <meta property="og:image" content="https://sf-t3-1779642675702-333.vercel.app/og-image.svg">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SEO 오토파일럿 가격 | 마포 주식투자 전문 솔루션">
+    <meta name="twitter:description" content="데이터 기반 주식투자와 SEO 자동화를 결합한 혁신적인 솔루션. SEO 오토파일럿 가격부터 투자 전략까지 한 번에 확인하세요.">
+    <meta name="twitter:image" content="https://sf-t3-1779642675702-333.vercel.app/og-image.svg">
+    <title>SEO 오토파일럿 가격 | 마포 주식투자 전문 솔루션</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "마포 주식투자 연구소",
+        "description": "SEO 오토파일럿 가격 기반의 데이터 중심 주식투자 솔루션 제공",
+        "url": "https://sf-t3-1779642675702-333.vercel.app/",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "마포",
+            "addressCountry": "KR"
+        },
+        "areaServed": "KR",
+        "priceRange": "₩₩",
+        "openingHours": "Mo-Fr 09:00-18:00"
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.8rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #faf8f5;
+            color: #2d2a26;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* Sticky Nav */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: #faf8f5;
+            border-bottom: 1px solid #2d2a26;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: -0.02em;
+            color: #2d2a26;
+            text-decoration: none;
+        }
+        .logo span { color: #e07a5f; }
+        .nav-list {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-list a {
+            text-decoration: none;
+            color: #2d2a26;
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 4px 0;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .nav-list a:hover { border-bottom-color: #e07a5f; }
+        .nav-cta a {
+            background-color: #2d2a26;
+            color: #faf8f5;
+            padding: 8px 20px;
+            border-radius: 0;
+            font-weight: 600;
+            border: 1px solid #2d2a26;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .nav-cta a:hover {
+            background-color: #e07a5f;
+            border-color: #e07a5f;
+            color: #faf8f5;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #2d2a26;
+            transition: 0.2s;
+        }
+        /* Hero */
+        .hero {
+            padding: 80px 0 60px;
+            border-bottom: 1px solid #2d2a26;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-content h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+        .hero-content h1 em {
+            font-style: normal;
+            color: #e07a5f;
+        }
+        .hero-content p {
+            font-size: 1.05rem;
+            color: #4a4643;
+            margin-bottom: 24px;
+            max-width: 440px;
+        }
+        .hero-cta {
+            display: inline-block;
+            background-color: #2d2a26;
+            color: #faf8f5;
+            padding: 12px 32px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid #2d2a26;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .hero-cta:hover {
+            background-color: #e07a5f;
+            border-color: #e07a5f;
+        }
+        .hero-visual {
+            background-color: #2d2a26;
+            aspect-ratio: 4 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #2d2a26;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-visual svg { width: 80%; height: 80%; }
+        /* Section */
+        section { padding: 40px 0; }
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            border-bottom: 1px solid #2d2a26;
+            padding-bottom: 8px;
+        }
+        .section-sub {
+            color: #4a4643;
+            margin-bottom: 32px;
+            max-width: 640px;
+        }
+        /* Card Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #2d2a26;
+            padding: 24px;
+            transition: box-shadow 0.2s;
+            box-shadow: 0 1px 2px rgba(45,42,38,0.08);
+        }
+        .card:hover { box-shadow: 0 2px 4px rgba(45,42,38,0.12); }
+        .card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #4a4643;
+        }
+        .card-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #e07a5f;
+            margin: 12px 0 4px;
+        }
+        .card-meta {
+            font-size: 0.8rem;
+            color: #7a7673;
+            border-top: 1px solid #e5e2df;
+            padding-top: 12px;
+            margin-top: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+        /* UGC Reviews */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        .review-card {
+            background-color: #ffffff;
+            border: 1px solid #2d2a26;
+            padding: 20px 24px;
+        }
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .review-nick {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .review-date {
+            font-size: 0.75rem;
+            color: #7a7673;
+        }
+        .review-stars {
+            color: #e07a5f;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            margin-bottom: 4px;
+        }
+        .review-text {
+            font-size: 0.9rem;
+            color: #4a4643;
+            line-height: 1.5;
+        }
+        /* Feature list */
+        .feature-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            list-style: none;
+        }
+        .feature-list li {
+            padding: 16px 20px;
+            border: 1px solid #2d2a26;
+            background-color: #ffffff;
+            font-size: 0.95rem;
+        }
+        .feature-list li::before {
+            content: "→";
+            color: #e07a5f;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        /* Contact */
+        .contact-block {
+            background-color: #ffffff;
+            border: 1px solid #2d2a26;
+            padding: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .contact-block a {
+            color: #e07a5f;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .contact-block a:hover { border-bottom-color: #e07a5f; }
+        /* Footer */
+        .site-footer {
+            border-top: 1px solid #2d2a26;
+            padding: 24px 0;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #4a4643;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                background-color: #faf8f5;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                padding: 16px 24px;
+                border-bottom: 1px solid #2d2a26;
+                gap: 12px;
+            }
+            .nav-list.open { display: flex; }
+            .hamburger { display: flex; }
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .hero-content h1 { font-size: 2rem; }
+            .card-grid, .review-grid { grid-template-columns: 1fr; }
+            .feature-list { grid-template-columns: 1fr; }
+            .contact-block { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="/" class="brand">EDITORIAL.T3</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE T3 / ACCENT HAIRLINES</div>
-      <h1>주식투자 리서치 및 기술 인프라 저널</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 저널은 현대적이고 세련된 <strong>주식투자</strong> 분야의 실용 정보와 심도 있는 기술 에세이를 기록하는 전문 아카이브 공간입니다. 아래의 엄선된 아티클 리스트를 통해 다양한 인사이트를 확인하시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>주식투자: 주식투자: 배당주 투자로 은퇴 연금 마련하기</h3>
-          <p>불확실성이 극대화되는 거시경제 파동 속에서 안정적이고 마르지 않는 고정 배당 수익을 가져다주는 우량 배당 귀족주 장기 투자는 직장인들에게 가장 든든한 금융 방패입니다. 배당 복리 ...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>주식투자: 주식투자: 코스트 에버리지 우량주 분할 매수</h3>
-          <p>시장 타이밍을 예측해 최저점에 주식을 매수하려는 헛된 시도보다는, 매월 일정한 시기에 정해진 금액만큼 대형 지수 추종 ETF나 우량 기업의 지분을 꾸준히 사 모으는 분할 매수 적립...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>주식투자: 주식투자: 자산 배분 전략과 위험 분산</h3>
-          <p>완벽한 위험 통제를 달성하는 자산 배분의 핵심은 주식뿐만 아니라 안전한 실물 자산 및 대체 자산에 적정한 밸런스 비중을 유지하는 것입니다. 이는 일시적 하락 파동에서도 내 멘탈과 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>주식투자 전문가들이 엄선한 SEO 오토파일럿 가격 상세 비법 가이드</h3>
-          <p>성공적인 주식투자를 위해 우량 기업의 재무제표와 분기 배당 성향을 꼼꼼하게 연구하다 보면, 리스크의 철저한 분산을 보장하는 것은 오직 변동 없는 오프라인 실물 경제의 든든한 고정 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>주식투자 전문가들이 엄선한 SEO 오토파일럿 가격 상세 비법 가이드</h3>
-          <p>성공적인 주식투자를 위해 우량 기업의 재무제표와 분기 배당 성향을 꼼꼼하게 연구하다 보면, 리스크의 철저한 분산을 보장하는 것은 오직 변동 없는 오프라인 실물 경제의 든든한 고정 ...</p>
-        </a>
-      
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">마포<span>투자</span></a>
+            <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-list" id="navList">
+                    <li><a href="#pricing">가격</a></li>
+                    <li><a href="#features">특징</a></li>
+                    <li><a href="#reviews">리뷰</a></li>
+                    <li><a href="#contact">문의</a></li>
+                    <li class="nav-cta"><a href="tel:010-6279-0862">010-6279-0862</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1>SEO 오토파일럿 <em>가격</em>으로<br>투자의 새로운 기준</h1>
+                    <p>마포 지역 최초, 데이터 기반 주식투자와 SEO 자동화를 통합한 솔루션. 정확한 시장 분석과 비용 효율적인 전략으로 안정적인 포트폴리오를 구축하십시오.</p>
+                    <a href="tel:010-6279-0862" class="hero-cta">전문가 상담</a>
+                </div>
+                <div class="hero-visual">
+                    <svg viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="80" fill="#2d2a26"/>
+                        <line x1="10" y1="65" x2="90" y2="65" stroke="#faf8f5" stroke-width="0.8"/>
+                        <polyline points="15,60 30,45 45,50 60,30 75,35 85,20" stroke="#e07a5f" stroke-width="2" fill="none"/>
+                        <circle cx="85" cy="20" r="2.5" fill="#e07a5f"/>
+                        <text x="15" y="18" fill="#faf8f5" font-size="4" font-weight="600">SEO 오토파일럿</text>
+                        <text x="15" y="25" fill="#e07a5f" font-size="3">가격 대비 효율</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <div class="container">
+                <h2 class="section-title">SEO 오토파일럿 가격 플랜</h2>
+                <p class="section-sub">투자 규모와 목표에 맞춘 세 가지 플랜. 모든 플랜은 데이터 기반 자동화와 실시간 SEO 모니터링을 포함합니다.</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>스타터</h3>
+                        <div class="card-price">₩297,000</div>
+                        <p>월 1회 포트폴리오 리밸런싱, 기본 SEO 리포트, 커뮤니티 접근</p>
+                        <div class="card-meta">
+                            <span>1개 계정</span>
+                            <span>14일 무료</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>프로 (인기)</h3>
+                        <div class="card-price">₩597,000</div>
+                        <p>주간 자동 리밸런싱, 실시간 SEO 오토파일럿, 전담 컨설턴트</p>
+                        <div class="card-meta">
+                            <span>3개 계정</span>
+                            <span>30일 무료</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>엔터프라이즈</h3>
+                        <div class="card-price">₩1,197,000</div>
+                        <p>일일 데이터 분석, 맞춤형 SEO 자동화, API 연동, 우선 지원</p>
+                        <div class="card-meta">
+                            <span>무제한 계정</span>
+                            <span>맞춤 견적</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <h2 class="section-title">핵심 기능</h2>
+                <p class="section-sub">SEO 오토파일럿 가격에 포함된 고급 기능을 통해 정확한 투자 결정을 내리십시오.</p>
+                <ul class="feature-list">
+                    <li>실시간 시장 데이터 수집 및 패턴 분석</li>
+                    <li>자동화된 SEO 최적화 리포트 생성</li>
+                    <li>다중 포트폴리오 리밸런싱 엔진</li>
+                    <li>리스크 평가 및 손절매 자동 설정</li>
+                    <li>키워드 기반 트렌드 예측 모델</li>
+                    <li>모바일 및 데스크탑 통합 대시보드</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <div class="container">
+                <h2 class="section-title">투자자 리뷰</h2>
+                <p class="section-sub">SEO 오토파일럿 가격과 서비스를 경험한 회원들의 실제 후기입니다.</p>
+                <div class="review-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-nick">투자하는토끼</span>
+                            <span class="review-date">2025-03-12</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">SEO 오토파일럿 가격 대비 성능이 놀랍습니다. 자동 리밸런싱 덕분에 매일 수익률을 확인할 수 있었어요.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-nick">데이터마이너</span>
+                            <span class="review-date">2025-02-28</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">마포에서 이런 서비스를 찾다니요. 프로 플랜 사용 중인데 실시간 SEO 모니터링이 특히 유용합니다.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-nick">주식하는변호사</span>
+                            <span class="review-date">2025-02-15</span>
+                        </div>
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">체계적인 데이터 분석이 인상적입니다. 초기 셋업이 조금 복잡했지만 결과에 만족합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">상담 및 문의</h2>
+                <div class="contact-block">
+                    <div>
+                        <p style="font-weight:600; margin-bottom:4px;">전화 상담 (평일 09-18시)</p>
+                        <a href="tel:010-6279-0862">010-6279-0862</a>
+                    </div>
+                    <div>
+                        <p style="font-weight:600; margin-bottom:4px;">서비스 위치</p>
+                        <span style="color:#4a4643;">서울 마포구 · 온라인 전국</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.T3. ALL RIGHTS RESERVED.</div>
+
+    
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">SEO 오토파일럿 가격 선택 전에 확인할 체크리스트와 실패 사례</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 제목: 창작한 제목 | 단골 손님의 비밀 메뉴 계산법 #### 소제목- 홍대 상권 폐업 원인 분석- 살아남은 업소들의 차별화 전략 아, 진짜... 2023년 홍대 상권에서 폐업한 업소들의 공통된 원인과 살아남은 곳들의 차별화 전략을 이해하기 위해선 단골 손님의 </p>
       </div>
-    </footer>
+      <a href="posts/checklist-001-1qdh27p.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">아, 진짜... 2023년 겨울, 홍대 상권에서 폐업한 업소들의 공통된 원인과 살아남은 곳들의 차별화 전략을 파헤쳐보자. ### 폐업 이유와 살아남은 이유 월 매출이 찍히는 것에도 불구하고 6개월 만에 폐업했던 진짜 원가 구조를 살펴보았다. 이들은 원래 월 매출 300</p>
+      </div>
+      <a href="posts/myth-002-1qdh27p.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
+<footer class="site-footer container">
+        <span>© 2025 마포 주식투자 연구소. All rights reserved.</span>
+        <span>사업자등록번호: 000-00-00000 | 통신판매업신고: 마포-2025-0001</span>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('navList').classList.toggle('open');
+        });
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navList').classList.remove('open');
+            });
+        });
+    </script>
 </body>
 </html>
